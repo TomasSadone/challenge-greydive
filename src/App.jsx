@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { AppRouter } from '../routers/AppRouter';
-import './App.css';
 
 function App() {
   const [data, setData] = useState(null);
