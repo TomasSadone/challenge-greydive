@@ -12,9 +12,16 @@ export const AppRouter = ({ data }) => {
       ) : (
         <BrowserRouter>
           <Routes>
-            <Route exact path='/' element={<UsabilityTests data={data} />} />
+            <Route
+              exact
+              path='/challenge-greydive'
+              element={<UsabilityTests data={data} />}
+            />
 
-            <Route path='/*' element={<UsabilityTest data={data} />} />
+            <Route
+              path='/challenge-greydive/*'
+              element={<UsabilityTest data={data} />}
+            />
           </Routes>
         </BrowserRouter>
       )}

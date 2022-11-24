@@ -6,7 +6,13 @@ import { Tareas } from './Tareas';
 
 export const UsabilityTest = ({ data }) => {
   const location = useLocation();
-  const testName = location.pathname.replace('/', '');
+  const testName = () => {
+    const string = location.pathname.slice(location.pathname.lastIndexOf('/'));
+    const string2 = string.replace('/', '');
+    return string2;
+  };
+  console.log(testName());
+  console.log(location);
   // const correspondingProps
   const {
     cliente,
@@ -16,7 +22,7 @@ export const UsabilityTest = ({ data }) => {
     idVideo,
     preguntas,
     transcripcion,
-  } = data.find(test => test.cliente === testName);
+  } = data.find(test => test.cliente === testName());
   return (
     <div className='flow'>
       <h1 className='uppercase text-decoration'>{cliente}</h1>
