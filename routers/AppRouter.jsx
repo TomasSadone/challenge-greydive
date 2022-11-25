@@ -10,7 +10,7 @@ export const AppRouter = ({ data }) => {
       {!data ? (
         <Loading />
       ) : (
-        <HashRouter basename='challenge-greydive'>
+        <HashRouter>
           <Routes>
             <Route path='/' element={<UsabilityTests data={data} />} />
 

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 
 export const TestCard = ({ cliente }) => {
   const handleClick = () => {
-    navigate(`/challenge-greydive/${cliente}`);
+    navigate(`/${cliente}`);
   };
   const navigate = useNavigate();
   return (
