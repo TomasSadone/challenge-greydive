@@ -11,9 +11,6 @@ export const UsabilityTest = ({ data }) => {
     const string2 = string.replace('/', '');
     return string2;
   };
-  console.log(testName());
-  console.log(location);
-  // const correspondingProps
   const {
     cliente,
     timeTest,

@@ -13,7 +13,6 @@ export const AppRouter = ({ data }) => {
         <BrowserRouter>
           <Routes>
             <Route
-              exact
               path='/challenge-greydive'
               element={<UsabilityTests data={data} />}
             />
